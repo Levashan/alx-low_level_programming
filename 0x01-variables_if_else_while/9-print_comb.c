@@ -16,8 +16,11 @@ int main(void)
 	while (n <= '9')
 	{
 		putchar(n);
-		putchar(',');
-		putchar(' ');
+		if (n <= '8')
+		{
+			putchar(',');
+			putchar(' ');
+		}
 		n++;
 	}
 	putchar('\n');
