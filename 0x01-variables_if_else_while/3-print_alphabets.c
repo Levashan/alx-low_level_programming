@@ -12,7 +12,7 @@
 int main(void)
 {
 	int c;
-	
+
 	c = 'a';
 	while (c <= 'z')
 	{
