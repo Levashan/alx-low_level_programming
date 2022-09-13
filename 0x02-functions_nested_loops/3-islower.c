@@ -1,11 +1,9 @@
 #include "main.h"
 
 /**
- * int _islower - Check for lowercase
+ * _islower - Check for lowercase
  *
- * @c - is an int
- *
- * Description: checks for lowercase c
+ * @c: c is an int
  *
  * Return: Successful
  */
