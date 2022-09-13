@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-
 /**
  * main - Lowercase Alphabet
  *
@@ -9,16 +8,14 @@
  * Return: Successful
  */
 
-int main(void)
+void print_alphabet(void)
 {
 	char a = 'a';
 
 	while (a <= 'z')
 	{
 		_putchar(a);
-		_putchar('\n');
 		a++;
 	}
-
-	return (0);
+	_putchar('\n');
 }
