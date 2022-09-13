@@ -1,17 +1,24 @@
-#include <stdlib.h>
 #include <stdio.h>
 
 /**
- * main - print putchar
+ * main - prints _putchar
  *
- * Description: prints putchar with printf
+ * Description: This returns _putchar
  *
- * Return: Successfull
+ * Return: Successful
  */
 
 int main(void)
 {
-	printf("_putchar\n");
+	int i = 0;
+	char a[8] = "_putchar";
+
+	while (i < 8)
+	{
+		putchar(a[i]);
+		i++;		
+	}
+	putchar('\n');
 
 	return (0);
 }
