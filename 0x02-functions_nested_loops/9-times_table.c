@@ -27,12 +27,16 @@ void times_table(void)
 				value3 = (value % 10) + '0';
 				_putchar(value2);
 				_putchar(value3);
+				_putchar(',');
+				_putchar(' ');
 			}
 			else
 			{
+				_putchar(' ');
 				_putchar(value + '0');
+				_putchar(',');
+				_putchar(' ');
 			}
-			_putchar(',');
 		}
 		_putchar('\n');
 	}
