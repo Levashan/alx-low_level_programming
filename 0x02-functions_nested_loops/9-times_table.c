@@ -15,7 +15,7 @@ void times_table(void)
 	int value;
 	int value2;
 	int value3;
-
+	int BoolValue = 1;
 	for (i = 0; i <= 9; i++)
 	{
 		for (x = 0; x <= 9; x++)
@@ -27,17 +27,26 @@ void times_table(void)
 				value3 = (value % 10) + '0';
 				_putchar(value2);
 				_putchar(value3);
-				_putchar(',');
-				_putchar(' ');
 			}
 			else
 			{
-				_putchar(' ');
+				if (BoolValue == 1)
+				{
+					BoolValue = 0;
+				}
+				else
+				{
+					_putchar(' ');
+				}
 				_putchar(value + '0');
+			}
+			if ( x <= 8)
+			{
 				_putchar(',');
 				_putchar(' ');
 			}
 		}
+		BoolValue = 1;
 		_putchar('\n');
 	}
 }
