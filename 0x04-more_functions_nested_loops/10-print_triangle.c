@@ -14,12 +14,26 @@ void print_triangle(int size)
 {
 	int i;
 	int x;
+	int j;
 
-	if (size > 0)
+	for (i = 0; i < size; i++)
 	{
-		for (i = size; i > 0; i--)
+		x = (size - i) - 1;
+		j = i + 1;
+		while (x > 0)
 		{
-
+			_putchar(' ');
+			x--;
 		}
+		while (j > 0)
+		{
+			_putchar('#');
+			hashes--;
+		}
+		_putchar('\n');
+	}
+	if (size <= 0)
+	{
+		_putchar('\n');
 	}
 }
