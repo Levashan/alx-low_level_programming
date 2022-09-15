@@ -28,7 +28,7 @@ void print_triangle(int size)
 		while (j > 0)
 		{
 			_putchar('#');
-			hashes--;
+			j--;
 		}
 		_putchar('\n');
 	}
