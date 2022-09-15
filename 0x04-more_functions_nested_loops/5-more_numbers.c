@@ -19,13 +19,12 @@ void more_numbers(void)
 		{
 			j = x;
 			if (j >= 10)
-			{		
+			{
 				j -= 10;
 				_putchar('1');
 			}
 			j += '0';
 			_putchar(j);
-			
 		}
 		_putchar('\n');
 	}
