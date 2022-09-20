@@ -12,28 +12,30 @@ void puts_half(char *str)
 {
 	int x = 0;
 	int i = 0;
+	int n;
 
 	while (str[x])
 	{
 		x++;
 	}
 	x--;
-	while (i < x)
+	n = x / 2;
+	while (i <= x)
 	{
-		if (i <= (x / 2))
+		if (i <= n)
 		{
 			i++;
 		}
 		else
 		{
-			if (i % 2 != 0)
+			if (n % 2 == 0)
 			{
-				putchar(str[x / 2]);
+				putchar(str[i]);
 				i++;
 			}
 			else
 			{
-				putchar(str[x]);
+				putchar(str[n]);
 				i++;
 			}
 		}
